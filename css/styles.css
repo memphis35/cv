@@ -1,0 +1,184 @@
+@font-face {
+  font-family: Josefin;
+  src: url("../fonts/josefin.ttf");
+}
+
+* {
+  font-family: Josefin, serif;
+}
+
+section, ul, lis, p, h2, h3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #3c3c3c;;
+}
+
+body {
+  border: 1px solid lightgrey;
+  color: #3c3c3c;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.name-contacts {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 150px;
+}
+
+#name-title, #contacts {
+  height: 100%;
+  justify-content: center;
+}
+
+#name-title {
+  padding: 0 8%;
+  background-color: #3c3c3c;
+  color: white;
+}
+
+#name-title p:first-child {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#name-title p:last-child {
+  font-weight: lighter;
+}
+
+#contacts {
+  padding-left: 20px;
+}
+
+#name-title * {
+  text-transform: uppercase;
+}
+
+#name-title h3 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.contacts {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.contact-line {
+  align-items: center;
+}
+
+.contact-line img {
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.table {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.table > section, .table > div {
+  border-top: 3px solid #3c3c3c;
+  padding: 20px 40px;
+}
+
+.table > section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.table > section h2 {
+  min-width: 200px;
+}
+
+.position, .school {
+  margin-bottom: 20px;
+}
+
+.position:last-child, .school:last-child {
+  margin-bottom: 0;
+}
+
+.job {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.description {
+  text-align: justify;
+}
+
+.padding-10-top-bottom {
+  padding: 10px 0 10px 0;
+}
+
+.school {
+  align-items: flex-start;
+}
+
+.school-title {
+  min-width: 230px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.language {
+  align-items: center;
+}
+
+.language-title {
+  min-width: 75px;
+}
+
+.bar {
+  border: 1px solid gray;
+  border-radius: 6px;
+  height: 6px;
+  width: 100px;
+}
+
+.filled_bar {
+  height: 100%;
+  background-color: gray;
+}
+
+.width95 {
+  width: 95%;
+}
+
+.width55 {
+  width: 55%;
+}
+
+.width10 {
+  width: 10%;
+}
+
+.skill-list li {
+  padding: 5px 0;
+}
+
+.skill-list li:first-child {
+  padding-top: 10px;
+}
+
