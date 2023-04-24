@@ -87,9 +87,9 @@ body {
   height: 40px;
   width: 40px;
   fill: #3c3c3c;
-  fill-opacity: 1;
+  fill-opacity: 0.5;
   stroke: #3c3c3c;
-  stroke-opacity: 1;
+  stroke-opacity: 0.5;
   align-items: center;
 }
 
@@ -139,6 +139,11 @@ body {
 
 .school-title {
   min-width: 230px;
+  margin-bottom: 10px;
+}
+
+.school-title * {
+  margin-bottom: 5px;
 }
 
 .skill-section {
@@ -205,11 +210,6 @@ body {
   }
 
   .skill-section {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .skill-section > section {
-    border-top: 3px solid #3c3c3c;
+    display: none;
   }
 }
