@@ -19,7 +19,6 @@ a {
 }
 
 body {
-  color: #3c3c3c;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -79,10 +78,6 @@ body {
   justify-content: space-between;
 }
 
-.contact {
-  align-items: center;
-}
-
 .icon {
   height: 40px;
   width: 40px;
@@ -98,7 +93,7 @@ body {
   margin-right: 5%;
 }
 
-.table > section, .table > div {
+.table > section {
   border-top: 3px solid #3c3c3c;
   padding: 20px 40px;
 }
@@ -191,7 +186,15 @@ body {
   padding-top: 10px;
 }
 
-@media (min-width: 240px) and (max-width: 767px) {
+@media (max-width: 767px) {
+
+  .table > section, .skill-section > section {
+    padding: 20px 0;
+  }
+
+  .skill-section > section {
+    border-top: 3px solid #3c3c3c;
+  }
 
   section {
     flex-direction: column;
@@ -201,15 +204,16 @@ body {
     margin-bottom: 10px;
   }
 
-  .table > section, .table > div {
-    padding: 20px 0;
-  }
-
   .school {
     flex-direction: column;
   }
 
   .skill-section {
-    display: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bar {
+    flex: 1;
   }
 }
