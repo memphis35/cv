@@ -93,7 +93,7 @@ body {
   margin-right: 5%;
 }
 
-.table > section {
+.table > section, .skill-section {
   border-top: 3px solid #3c3c3c;
   padding: 20px 40px;
 }
@@ -144,10 +144,11 @@ body {
 .skill-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10%;
 }
 
 .language {
-  align-items: center;
+
 }
 
 .language-title {
@@ -155,27 +156,37 @@ body {
 }
 
 .bar {
-  border: 1px solid gray;
-  border-radius: 6px;
-  height: 6px;
-  width: 100px;
+  display: flex;
+  gap: 2px;
 }
 
-.filled_bar {
-  height: 100%;
-  background-color: gray;
+.bar-segment {
+  border: #3c3c3c 2px solid;
+  font-size: xx-small;
+  text-align: center;
+  color: white;
+  vertical-align: center;
+  min-height: 15px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.width95 {
-  width: 95%;
+.start-segment {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-left: 5px;
 }
 
-.width55 {
-  width: 55%;
+.end-segment {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-right: 5px;
 }
 
-.width10 {
-  width: 10%;
+.filled {
+  background-color: #3c3c3c;
 }
 
 .skill-list li {
@@ -190,6 +201,11 @@ body {
 
   .table > section, .skill-section > section {
     padding: 20px 0;
+  }
+
+  .skill-section {
+    border-top: none;
+    padding: 0;
   }
 
   .skill-section > section {
